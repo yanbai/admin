@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link href="/stylesheets/bootstrap.min.css" rel="stylesheet">
+	<link href="/stylesheets/blog.css" rel="stylesheet">
+  </head>
+  <body>
+  	<% if (user) { %>
+	    你好，<%= user.name %> ，你登录了
+	<% } else { %>
+		你还没登录
+	<% } %>
+	<% if (success) { %>
+	  <div><%= success %></div>
+	<% } %>
+	<% if (error) { %>
+	  <div><%= error %> </div>
+	<% } %>

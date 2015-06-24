@@ -1,0 +1,22 @@
+<%- include admin_header %>
+	<table class="table table-condensed">
+		<thead>
+			<tr>
+				<th>title</th>
+				<th>author</th>
+				<th></th>
+				<th></th>
+			</tr>
+		</thead>
+		<tbody>
+		<% posts.forEach(function(item,i){ %>
+			<tr>
+				<td><a href=""><%= item.title %></a></td>
+				<td><a href=""><%= item.name %></a></td>
+				<td><a href="/admin/post_lists?post_id=<%= item._id %>&&action=delete">删除</a></td>
+				<td><a href="/admin/post_lists?post_id=<%= item._id %>&&action=edit">修改</a></td>
+			</tr>
+		<% }) %>
+		</tbody>
+	</table>
+<%- include admin_footer %>

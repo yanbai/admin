@@ -1,0 +1,11 @@
+<%- include admin_header %>
+	<form method="post">
+		<div class="form-group">
+			<p><input class="form-control" type="text" name="title" value="<%- post.title %>" ></p>
+			<p><textarea class="form-control" name="post" rows="20" cols="100"><%- post.post %></textarea></p>
+			<p><%- post.time.date %></p>
+			<p><%- post.name %></p>
+			<p><button class="btn btn-default" type="submit">提交</button></p>
+		</div>
+	</form>
+<%- include admin_footer %>

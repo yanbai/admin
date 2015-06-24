@@ -1,0 +1,11 @@
+<%- include admin_header %>
+	<form method="post">
+		<div class="form-group">
+			<label for="title">标题：</label>
+			<input class="form-control" id="title" type="text" name="title" />
+			<label for="content">正文：</label>
+			<textarea class="form-control" id="content" name="post" rows="20" cols="100"></textarea><br />
+			<button class="btn btn-default" type="submit">发表</button>
+		</div>
+	</form>
+<%- include admin_footer %>
